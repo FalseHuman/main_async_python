@@ -1,5 +1,6 @@
 import socket
 
+# Постановка проблемы сервер не поддерживает несколько запросов к нему
 # domain:port
 
 socket_server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
