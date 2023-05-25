@@ -1,7 +1,7 @@
 import socket
 import selectors
 
-# асинхронность при помощи event_loop
+# асинхронность при помощи event_loop - callbacks
 # domain:port
 
 selector = selectors.DefaultSelector()
@@ -47,7 +47,7 @@ def event_loop():
         # fileobj
         # events
         # data 
-        
+
         for key, _ in events:
             callback = key.data
             callback(key.fileobj)
