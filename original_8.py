@@ -39,7 +39,7 @@ def write_image(data):
 
 
 async def fecth_content(url, session):
-    async with session.get(url, allow_redirect=True) as response:
+    async with session.get(url, allow_redirects=True) as response:
         data = await response.read()
         write_image(data)
 
